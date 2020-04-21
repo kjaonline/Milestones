@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/test', 'MilestonesController@test');
 Route::get('/test/{id}', 'MilestonesController@withID');
+Route::get('/milestones', 'MilestonesController@count');
 Route::get('/php', 'MilestonesController@phpinfo');

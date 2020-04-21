@@ -16,7 +16,8 @@ class CreateMilestonesTable extends Migration
         Schema::create('milestones', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->text('description');
+            $table->string('title');
+            $table->mediumText('description');
         });
     }
 

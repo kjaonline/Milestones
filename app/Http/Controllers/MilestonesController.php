@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Milestone;
 
 class MilestonesController extends Controller
 {
@@ -23,5 +24,11 @@ class MilestonesController extends Controller
 
     public function phpinfo(){
         return phpInfo();
+    }
+
+    public function count(){
+        $test = new class{};
+        $test->test = Milestone::count();
+        return json_encode($test);
     }
 }
