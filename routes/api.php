@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/test', 'MilestonesController@test');
-Route::get('/test/{id}', 'MilestonesController@withID');
-Route::get('/milestones', 'MilestonesController@count');
-Route::get('/php', 'MilestonesController@phpinfo');
+Route::get('test', 'MilestonesController@test');
+Route::get('test/{id}', 'MilestonesController@withID');
+Route::get('milestones', 'MilestonesController@count');
+Route::get('php', 'MilestonesController@phpinfo');
+Route::resource('testresource', 'Update');
